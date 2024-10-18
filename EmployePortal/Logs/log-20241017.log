@@ -1,0 +1,194 @@
+2024-10-17 20:17:29.619 +05:30  INF  Now listening on: https://localhost:7213
+2024-10-17 20:17:29.666 +05:30  INF  Now listening on: http://localhost:5235
+2024-10-17 20:17:29.728 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-17 20:17:29.733 +05:30  INF  Hosting environment: Development
+2024-10-17 20:17:29.736 +05:30  INF  Content root path: C:\Users\spatole\source\repos\EmployePortal\EmployePortal
+2024-10-17 20:17:30.967 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - null null
+2024-10-17 20:17:31.223 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - 200 null text/html;charset=utf-8 263.037ms
+2024-10-17 20:17:31.233 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-17 20:17:31.233 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2024-10-17 20:17:31.239 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 6.8069ms
+2024-10-17 20:17:31.286 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.7714ms
+2024-10-17 20:17:31.361 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - null null
+2024-10-17 20:17:31.473 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 112.2212ms
+2024-10-17 20:17:54.140 +05:30  INF  Request starting HTTP/2 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 96
+2024-10-17 20:17:54.166 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:17:54.199 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:17:57.229 +05:30  INF  Received request to add the Employee
+2024-10-17 20:17:57.808 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-10-17 20:17:59.163 +05:30  INF  Executed DbCommand (101ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [Email], [Name], [Phone], [Salary])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-10-17 20:17:59.235 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployePortal.Models.Entities.Employee'.
+2024-10-17 20:17:59.249 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 5044.8658ms
+2024-10-17 20:17:59.249 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:17:59.265 +05:30  INF  Request finished HTTP/2 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 200 null application/json; charset=utf-8 5126.0983ms
+2024-10-17 20:30:34.807 +05:30  INF  Now listening on: https://localhost:7213
+2024-10-17 20:30:34.846 +05:30  INF  Now listening on: http://localhost:5235
+2024-10-17 20:30:34.926 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-17 20:30:34.929 +05:30  INF  Hosting environment: Development
+2024-10-17 20:30:34.932 +05:30  INF  Content root path: C:\Users\spatole\source\repos\EmployePortal\EmployePortal
+2024-10-17 20:30:36.215 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - null null
+2024-10-17 20:30:36.440 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - 200 null text/html;charset=utf-8 231.9151ms
+2024-10-17 20:30:36.450 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-17 20:30:36.450 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2024-10-17 20:30:36.457 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 7.4232ms
+2024-10-17 20:30:36.500 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.453ms
+2024-10-17 20:30:36.624 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - null null
+2024-10-17 20:30:36.813 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.0899ms
+2024-10-17 20:40:00.803 +05:30  INF  Now listening on: https://localhost:7213
+2024-10-17 20:40:00.846 +05:30  INF  Now listening on: http://localhost:5235
+2024-10-17 20:40:00.900 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-17 20:40:00.905 +05:30  INF  Hosting environment: Development
+2024-10-17 20:40:00.907 +05:30  INF  Content root path: C:\Users\spatole\source\repos\EmployePortal\EmployePortal
+2024-10-17 20:40:01.997 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - null null
+2024-10-17 20:40:02.234 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - 200 null text/html;charset=utf-8 245.5349ms
+2024-10-17 20:40:02.241 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-17 20:40:02.241 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2024-10-17 20:40:02.246 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 5.3235ms
+2024-10-17 20:40:02.282 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.6651ms
+2024-10-17 20:40:02.351 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - null null
+2024-10-17 20:40:02.455 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 103.8823ms
+2024-10-17 20:40:07.478 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee - application/json 95
+2024-10-17 20:40:07.508 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee - 404 0 null 29.4306ms
+2024-10-17 20:40:07.511 +05:30  INF  Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7213/api/Employee, Response status code: 404
+2024-10-17 20:40:44.650 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee - application/json 95
+2024-10-17 20:40:44.651 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee - 404 0 null 1.3064ms
+2024-10-17 20:40:44.652 +05:30  INF  Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7213/api/Employee, Response status code: 404
+2024-10-17 20:41:03.419 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee - application/json 95
+2024-10-17 20:41:03.421 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee - 404 0 null 2.3843ms
+2024-10-17 20:41:03.421 +05:30  INF  Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7213/api/Employee, Response status code: 404
+2024-10-17 20:41:33.989 +05:30  INF  Request starting HTTP/2 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 78
+2024-10-17 20:41:33.997 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:41:34.053 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:41:34.381 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 320.6535ms
+2024-10-17 20:41:34.385 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:41:34.455 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'EmployePortal.Authentication.IApiKeyValidator' while attempting to activate 'EmployePortal.Controllers.EmployeeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-10-17 20:41:34.470 +05:30  INF  Request finished HTTP/2 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 500 null text/plain; charset=utf-8 480.9985ms
+2024-10-17 20:41:55.129 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 95
+2024-10-17 20:41:55.130 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:41:55.130 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:41:55.143 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 10.2993ms
+2024-10-17 20:41:55.149 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:41:55.159 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'EmployePortal.Authentication.IApiKeyValidator' while attempting to activate 'EmployePortal.Controllers.EmployeeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-10-17 20:41:55.162 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 500 null text/plain; charset=utf-8 33.247ms
+2024-10-17 20:42:33.052 +05:30  INF  Now listening on: https://localhost:7213
+2024-10-17 20:42:33.081 +05:30  INF  Now listening on: http://localhost:5235
+2024-10-17 20:42:33.124 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-17 20:42:33.127 +05:30  INF  Hosting environment: Development
+2024-10-17 20:42:33.129 +05:30  INF  Content root path: C:\Users\spatole\source\repos\EmployePortal\EmployePortal
+2024-10-17 20:42:34.547 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - null null
+2024-10-17 20:42:34.804 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - 200 null text/html;charset=utf-8 262.1821ms
+2024-10-17 20:42:34.820 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2024-10-17 20:42:34.820 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-17 20:42:34.826 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 6.1787ms
+2024-10-17 20:42:34.880 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.3401ms
+2024-10-17 20:42:34.980 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - null null
+2024-10-17 20:42:35.101 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.4974ms
+2024-10-17 20:43:04.339 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 95
+2024-10-17 20:43:04.350 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:43:04.419 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:43:04.808 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 378.7599ms
+2024-10-17 20:43:04.811 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:43:04.883 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'EmployePortal.Authentication.IApiKeyValidator' while attempting to activate 'EmployePortal.Controllers.EmployeeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-10-17 20:43:04.915 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 500 null text/plain; charset=utf-8 576.3814ms
+2024-10-17 20:46:16.445 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 95
+2024-10-17 20:46:16.448 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:46:16.449 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:46:16.460 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 10.9265ms
+2024-10-17 20:46:16.461 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:46:16.474 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: Unable to resolve service for type 'EmployePortal.Authentication.IApiKeyValidator' while attempting to activate 'EmployePortal.Controllers.EmployeeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2024-10-17 20:46:16.479 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 500 null text/plain; charset=utf-8 33.6963ms
+2024-10-17 20:47:04.244 +05:30  INF  Now listening on: https://localhost:7213
+2024-10-17 20:47:04.289 +05:30  INF  Now listening on: http://localhost:5235
+2024-10-17 20:47:04.361 +05:30  INF  Application started. Press Ctrl+C to shut down.
+2024-10-17 20:47:04.366 +05:30  INF  Hosting environment: Development
+2024-10-17 20:47:04.371 +05:30  INF  Content root path: C:\Users\spatole\source\repos\EmployePortal\EmployePortal
+2024-10-17 20:47:05.421 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/index.html - null null
+2024-10-17 20:47:05.659 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/index.html - 200 null text/html;charset=utf-8 245.207ms
+2024-10-17 20:47:05.670 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - null null
+2024-10-17 20:47:05.670 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/_vs/browserLink - null null
+2024-10-17 20:47:05.677 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_framework/aspnetcore-browser-refresh.js - 200 13762 application/javascript; charset=utf-8 7.5423ms
+2024-10-17 20:47:05.718 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.1012ms
+2024-10-17 20:47:05.832 +05:30  INF  Request starting HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - null null
+2024-10-17 20:47:05.947 +05:30  INF  Request finished HTTP/2 GET https://localhost:7213/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 115.4116ms
+2024-10-17 20:47:10.060 +05:30  INF  Request starting HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - application/json 95
+2024-10-17 20:47:10.072 +05:30  INF  Executing endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:47:10.107 +05:30  INF  Route matched with {action = "AddEmployee", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddEmployee(EmployePortal.Models.Entities.EmployeeDTO) on controller EmployePortal.Controllers.EmployeeController (EmployePortal).
+2024-10-17 20:47:37.000 +05:30  INF  Received request to add the Employee
+2024-10-17 20:47:37.648 +05:30  WRN  No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2024-10-17 20:47:39.048 +05:30  INF  Executed DbCommand (96ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([Id], [Email], [Name], [Phone], [Salary])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2024-10-17 20:47:39.081 +05:30  INF  Executing OkObjectResult, writing value of type 'EmployePortal.Models.Entities.Employee'.
+2024-10-17 20:47:39.103 +05:30  INF  Executed action EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal) in 28990.5774ms
+2024-10-17 20:47:39.104 +05:30  INF  Executed endpoint 'EmployePortal.Controllers.EmployeeController.AddEmployee (EmployePortal)'
+2024-10-17 20:47:39.113 +05:30  INF  Request finished HTTP/1.1 POST https://localhost:7213/api/Employee/GetEmployeeDetails - 200 null application/json; charset=utf-8 29052.9537ms
